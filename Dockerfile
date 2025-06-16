@@ -39,7 +39,7 @@ FROM guacamole/guacamole:${GUAC_VERSION}
 ARG GUAC_VERSION
 
 # Set the GUACAMOLE_HOME to the new directory so Guacamole can find its files.
-ENV GUACAMOLE_HOME /home/guacamole/glueops/
+ENV GUACAMOLE_HOME=/home/guacamole/glueops
 
 # Create the extensions directory inside our new GUACAMOLE_HOME.
 RUN mkdir -p /home/guacamole/glueops/extensions
