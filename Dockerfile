@@ -42,7 +42,7 @@ ARG GUAC_VERSION
 ENV GUACAMOLE_HOME=/home/guacamole/glueops
 
 # Create the extensions directory inside our new GUACAMOLE_HOME.
-RUN mkdir -p /home/guacamole/glueops/extensions
+RUN mkdir -p $GUACAMOLE_HOME/extensions
 
 
 # Copy only the required OpenID SSO JAR from the downloader stage to the new extensions directory.
