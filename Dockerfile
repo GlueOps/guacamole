@@ -7,7 +7,7 @@
 # renovate: datasource=github-releases depName=apache/guacamole-client
 ARG GUAC_VERSION=1.6.0@sha256:f344085e618bb05e22b964b0208dbd06d3468275bac70206f93805245e067b40
 
-FROM debian:bullseye-slim@sha256:f18adf4e1d04b1d8ba48025b8e35003f4c748ddd3dd8e875fe4e7d9a9c0dec84 AS downloader
+FROM debian:bullseye-slim@sha256:cba95a21c96c1f5fc2470081829363eed57706634f7dc26e8c6712934303d57a AS downloader
 
 # Install required tools for downloading and extracting
 RUN apt-get update && apt-get install -y wget tar && rm -rf /var/lib/apt/lists/*
